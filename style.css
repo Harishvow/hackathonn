@@ -413,7 +413,6 @@ h1.glow-text {
     transform: translateY(30px);
     animation: slideUp 0.8s ease-out forwards;
 }
-
 .delay-1 {
     animation-delay: 0.2s;
 }

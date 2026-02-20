@@ -22,3 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 });
+// Scroll fade-in animation
+const elements = document.querySelectorAll(".coord-card, .highlight-item");
+
+window.addEventListener("scroll", () => {
+    elements.forEach(el => {
+        const position = el.getBoundingClientRect().top;
+        if (position < window.innerHeight - 100) {
+            el.style.opacity = "1";
+            el.style.transform = "translateY(0)";
+        }
+    });
+});
